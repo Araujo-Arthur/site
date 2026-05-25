@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title >Clínica Orthon+ - Cuidado especializado para sua saúde </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    
+
+    <nav>
+
+        <a href="#" class="nav-logo">
+
+            <div class="nav-logo-icon">
+
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+
+                    <path d="M13 2C13 2 6 6 6 13C6 17.4 9.1 21.1 13 22.5C16.9 21.1 20 17.4 20 13C20 6 13 2 13 2Z" fill="white" opacity="0.9"/>
+                    <rect x="11" y="9" width="4" height="9" rx="2" fill="#1B4F8C"/>
+                    <rect x="8.5" y="11.5" width="9" height="4" rx="2" fill="#1B4F8C"/>
+
+                </svg>
+
+            </div>
+
+            <div class="nav-logo-text">
+
+                <strong>Clínica Orthon+</strong>
+                <span>Saúde &amp; Bem-estar</span>
+
+            </div>
+
+        </a>
+
+        <ul class="nav-links">
+
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#especialidades">Especialidades</a></li>
+            <li><a href="#medicos">Médicos</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#contato">Contato</a></li>
+
+        </ul>
+
+        <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+        <a href="https://wa.me/5521983259795" class="nav-cta" target="_blank">
+        
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.112 1.532 5.836L.067 23.077a.5.5 0 00.608.66l5.456-1.437A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.659-.522-5.17-1.427l-.374-.222-3.832 1.009 1.039-3.727-.244-.387A9.957 9.957 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+        
+            </svg>
+            Agendar Consulta
+        </a>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+
+            <div class="hero-badge">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><circle cx="6" cy="6" r="6"/></svg>
+                Atendimento de Segunda a Sábado
+            </div>
+
+            <h1>Cuidando da sua saúde com <em>dedicação</em> e excelência</h1>
+            <p>Uma clínica completa, com profissionais altamente qualificados e muita tecnologia para oferecer o melhor para você e para sua família.</p>
+
+            <div class="hero-buttons">
+                <a href="https://wa.me/5521983259795" target="_blank" class="btn-whatsapp">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.112 1.532 5.836L.067 23.077a.5.5 0 00.608.66l5.456-1.437A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.659-.522-5.17-1.427l-.374-.222-3.832 1.009 1.039-3.727-.244-.387A9.957 9.957 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+                    </svg>
+                    Agendar pelo WhatsApp
+                </a>
+            <a href="#especialidades" class="btn-outline">
+                Ver Especialidades
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            </div>
+                <div class="hero-stats">
+                <div class="stat"><strong>+15 anos</strong><span>de experiência</span></div>
+                <div class="stat"><strong>+8000</strong><span>pacientes atendidos</span></div>
+                <div class="stat"><strong>12</strong><span>especialidades</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+
+        <div class="sobre-grid">
+
+            <div class="sobre-visual">
+
+                <div class="sobre-img-wrap">
+
+                    <svg class="sobre-svg" viewBox="0 0 300 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                        <ellipse cx="150" cy="380" rx="90" ry="20" fill="#c9dff2" opacity="0.5"/>
+                        <rect x="105" y="200" width="90" height="160" rx="20" fill="#2E7BC4"/>
+                        <rect x="100" y="210" width="100" height="150" rx="20" fill="white" opacity="0.95"/>
+                        <rect x="130" y="210" width="40" height="150" fill="white"/>
+                        <circle cx="150" cy="265" r="14" fill="none" stroke="#1B4F8C" stroke-width="3"/>
+                        <path d="M150 279 Q160 300 160 310 Q160 325 150 325 Q140 325 140 310 Q140 300 150 279Z" fill="none" stroke="#1B4F8C" stroke-width="3"/>
+                        <circle cx="150" cy="327" r="8" fill="#1B4F8C"/>
+                        <rect x="146" y="230" width="8" height="22" rx="3" fill="#F5C518"/>
+                        <rect x="140" y="236" width="20" height="8" rx="3" fill="#F5C518"/>
+                        <ellipse cx="150" cy="165" rx="42" ry="48" fill="#FFDAB9"/>
+                        <ellipse cx="150" cy="128" rx="42" ry="22" fill="#1B4F8C"/>
+                        <rect x="108" y="128" width="84" height="20" fill="#1B4F8C"/>
+                        <ellipse cx="137" cy="168" rx="5" ry="6" fill="#1A2535"/>
+                        <ellipse cx="163" cy="168" rx="5" ry="6" fill="#1A2535"/>
+                        <path d="M138 182 Q150 192 162 182" stroke="#1A2535" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                        <rect x="65" y="210" width="42" height="24" rx="12" fill="white"/>
+                        <rect x="193" y="210" width="42" height="24" rx="12" fill="white"/>
+                        <ellipse cx="72" cy="222" rx="10" ry="10" fill="#FFDAB9"/>
+                        <ellipse cx="228" cy="222" rx="10" ry="10" fill="#FFDAB9"/>
+                        <rect x="200" y="218" width="36" height="46" rx="5" fill="white" stroke="#E4EDF5" stroke-width="1.5"/>
+                        <rect x="205" y="224" width="26" height="3" rx="2" fill="#2E7BC4"/>
+                        <rect x="205" y="231" width="20" height="3" rx="2" fill="#c9dff2"/>
+                        <rect x="205" y="238" width="23" height="3" rx="2" fill="#c9dff2"/>
+                        <rect x="205" y="245" width="18" height="3" rx="2" fill="#c9dff2"/>
+
+                    </svg>
+
+                </div>
+
+                <div class="sobre-badge-float">
+
+                    <div class="icon-circle">🏆</div>
+
+                    <div>
+
+                        <strong>6.7★</strong>
+                        <span>Avaliação média</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <div class="section-label">Sobre a Clínica</div>
+                <h2 class="section-title">Tradição e inovação a serviço da sua saúde</h2>
+                <p class="section-sub">Há mais de 15 anos dedicados ao cuidado da saúde dos nossos pacientes, com uma equipe multidisciplinar comprometida com o diagnóstico preciso e o tratamento humanizado.</p>
+
+                <ul class="check-list">
+                    <li><span class="check-icon">✓</span>Equipe médica com formação em hospitais de referência</li>
+                    <li><span class="check-icon">✓</span>Infraestrutura moderna com equipamentos de última geração</li>
+                    <li><span class="check-icon">✓</span>Atendimento humanizado e personalizado para cada paciente</li>
+                    <li><span class="check-icon">✓</span>Prontuário eletrônico e resultados online</li>
+                    <li><span class="check-icon">✓</span>Convênios médicos e atendimento particular</li>
+                </ul>
+
+                <a href="https://wa.me/5521983259795" class="btn-whatsapp" target="_blank">
+
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.112 1.532 5.836L.067 23.077a.5.5 0 00.608.66l5.456-1.437A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.659-.522-5.17-1.427l-.374-.222-3.832 1.009 1.039-3.727-.244-.387A9.957 9.957 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+                    </svg>
+                    Fale conosco
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+    <section id="especialidades">
+        <div class="section-header">
+            <div class="section-label">Especialidades</div>
+            <h2 class="section-title">Cuidado completo em um só lugar</h2>
+            <p class="section-sub">Nossa clínica oferece diversas especialidades médicas para atender todas as necessidades da sua família.</p>
+        </div>
+        <div class="especialidades-grid">
+            <div class="espec-card">
+                <div class="espec-icon">🫀</div>
+                <h3>Cardiologia</h3>
+                <p>Prevenção, diagnóstico e tratamento de doenças do coração e sistema cardiovascular.</p>
+            </div>
+            <div class="espec-card">
+                <div class="espec-icon">🧠</div>
+                <h3>Neurologia</h3>
+                <p>Avaliação e tratamento de distúrbios do sistema nervoso central e periférico.</p>
+            </div>
+            <div class="espec-card">
+                <div class="espec-icon">🦴</div>
+                <h3>Ortopedia</h3>
+                <p>Tratamento de lesões e doenças do aparelho locomotor, ossos, articulações e músculos.</p>
+            </div>
+            <div class="espec-card">
+                <div class="espec-icon">👶</div>
+                <h3>Pediatria</h3>
+                <p>Cuidados médicos para bebês, crianças e adolescentes, do nascimento à fase adulta.</p>
+            </div>
+            <div class="espec-card">
+                <div class="espec-icon">🔬</div>
+                <h3>Dermatologia</h3>
+                <p>Diagnóstico e tratamento de doenças da pele, cabelo e unhas com tecnologia avançada.</p>
+            </div>
+            <div class="espec-card">
+                <div class="espec-icon">🩺</div>
+                <h3>Clínica Geral</h3>
+                <p>Atendimento integral para prevenção e diagnóstico, com acompanhamento contínuo da saúde.</p>
+            </div>
+            <div class="espec-card">
+                <div class="espec-icon">👁️</div>
+                <h3>Oftalmologia</h3>
+                <p>Avaliação visual completa, cirurgias e tratamento de doenças dos olhos.</p>
+            </div>
+            <div class="espec-card">
+                <div class="espec-icon">🦷</div>
+                <h3>Endocrinologia</h3>
+                <p>Tratamento de distúrbios hormonais, diabetes, obesidade e doenças da tireoide.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="medicos" style="background: var(--cinza);">
+        <div class="section-header">
+            <div class="section-label">Nossa Equipe</div>
+            <h2 class="section-title">Profissionais que cuidam de você</h2>
+            <p class="section-sub">Médicos especialistas com ampla experiência e dedicação ao cuidado humanizado.</p>
+        </div>
+
+        <div class="medicos-grid">
+
+            <div class="medico-card">
+                <div class="medico-foto">
+                    <svg viewBox="0 0 130 200" fill="none">
+                        <ellipse cx="65" cy="70" rx="35" ry="40" fill="#FFDAB9"/>
+                        <ellipse cx="65" cy="42" rx="35" ry="18" fill="#1B4F8C"/>
+                        <rect x="30" y="42" width="70" height="16" fill="#1B4F8C"/>
+                        <ellipse cx="48" cy="72" rx="4" ry="5" fill="#1A2535"/>
+                        <ellipse cx="82" cy="72" rx="4" ry="5" fill="#1A2535"/>
+                        <path d="M52 86 Q65 96 78 86" stroke="#1A2535" stroke-width="2" stroke-linecap="round" fill="none"/>
+                        <rect x="30" y="110" width="70" height="90" rx="16" fill="white"/>
+                        <rect x="50" y="110" width="30" height="90" fill="white"/>
+                        <rect x="60" y="125" width="6" height="18" rx="3" fill="#F5C518"/>
+                        <rect x="54" y="131" width="18" height="6" rx="3" fill="#F5C518"/>
+                    </svg>
+                </div>
+                <div class="medico-info">
+                    <h3>Dr. Victor Carolino</h3>
+                    <p class="crm">CRM 12345-RJ</p>
+                    <span class="espec-tag">Cardiologista</span>
+                </div>
+            </div>
+
+            <div class="medico-card">
+                <div class="medico-foto" style="background: linear-gradient(160deg, #FFF0E6, #FFD8C0);">
+                    <svg viewBox="0 0 130 200" fill="none">
+                        <ellipse cx="65" cy="70" rx="35" ry="40" fill="#FFDAB9"/>
+                        <ellipse cx="65" cy="40" rx="38" ry="22" fill="#8B4513"/>
+                        <rect x="27" y="40" width="76" height="18" fill="#8B4513"/>
+                        <ellipse cx="48" cy="72" rx="4" ry="5" fill="#1A2535"/>
+                        <ellipse cx="82" cy="72" rx="4" ry="5" fill="#1A2535"/>
+                        <path d="M52 86 Q65 96 78 86" stroke="#1A2535" stroke-width="2" stroke-linecap="round" fill="none"/>
+                        <rect x="30" y="110" width="70" height="90" rx="16" fill="white"/>
+                        <rect x="50" y="110" width="30" height="90" fill="white"/>
+                        <rect x="60" y="125" width="6" height="18" rx="3" fill="#F5C518"/>
+                        <rect x="54" y="131" width="18" height="6" rx="3" fill="#F5C518"/>
+                    </svg>
+                </div>
+                <div class="medico-info">
+                    <h3>Dra. Victória Carolina</h3>
+                    <p class="crm">CRM 67890-RJ</p>
+                    <span class="espec-tag">Neurologista</span>
+                </div>
+            </div>
+
+            <div class="medico-card">
+                <div class="medico-foto" style="background: linear-gradient(160deg, #E6F5E6, #B8DFB8);">
+                    <svg viewBox="0 0 130 200" fill="none">
+                        <ellipse cx="65" cy="70" rx="35" ry="40" fill="#DEB887"/>
+                        <ellipse cx="65" cy="42" rx="35" ry="18" fill="#1A2535"/>
+                        <rect x="30" y="42" width="70" height="16" fill="#1A2535"/>
+                        <ellipse cx="48" cy="72" rx="4" ry="5" fill="#1A2535"/>
+                        <ellipse cx="82" cy="72" rx="4" ry="5" fill="#1A2535"/>
+                        <path d="M52 86 Q65 96 78 86" stroke="#1A2535" stroke-width="2" stroke-linecap="round" fill="none"/>
+                        <rect x="30" y="110" width="70" height="90" rx="16" fill="white"/>
+                        <rect x="50" y="110" width="30" height="90" fill="white"/>
+                        <rect x="60" y="125" width="6" height="18" rx="3" fill="#F5C518"/>
+                        <rect x="54" y="131" width="18" height="6" rx="3" fill="#F5C518"/>
+                    </svg>
+                </div>
+                <div class="medico-info">
+                    <h3>Dr. Carolino Victor</h3>
+                    <p class="crm">CRM 54321-RJ</p>
+                    <span class="espec-tag">Ortopedista</span>
+                </div>
+            </div>
+
+            <div class="medico-card">
+                <div class="medico-foto" style="background: linear-gradient(160deg, #F5E6FF, #D8B8FF);">
+                    <svg viewBox="0 0 130 200" fill="none">
+                        <ellipse cx="65" cy="70" rx="35" ry="40" fill="#FFDAB9"/>
+                        <ellipse cx="65" cy="42" rx="40" ry="24" fill="#5C3317"/>
+                        <rect x="25" y="42" width="80" height="20" fill="#5C3317"/>
+                        <ellipse cx="48" cy="72" rx="4" ry="5" fill="#1A2535"/>
+                        <ellipse cx="82" cy="72" rx="4" ry="5" fill="#1A2535"/>
+                        <path d="M52 86 Q65 96 78 86" stroke="#1A2535" stroke-width="2" stroke-linecap="round" fill="none"/>
+                        <rect x="30" y="110" width="70" height="90" rx="16" fill="white"/>
+                        <rect x="50" y="110" width="30" height="90" fill="white"/>
+                        <rect x="60" y="125" width="6" height="18" rx="3" fill="#F5C518"/>
+                        <rect x="54" y="131" width="18" height="6" rx="3" fill="#F5C518"/>
+                    </svg>
+                </div>
+                <div class="medico-info">
+                    <h3>Dra. Carólia Victorina</h3>
+                    <p class="crm">CRM 98765-RJ</p>
+                    <span class="espec-tag">Pediatra</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="depoimentos" id="depoimentos">
+
+        <div class="section-header">
+            <div class="section-label">Depoimentos</div>
+            <h2 class="section-title">O que nossos pacientes dizem</h2>
+            <p class="section-sub">A confiança dos nossos pacientes é a nossa maior conquista.</p>
+
+        </div>
+
+        <div class="depo-grid">
+            <div class="depo-card">
+                <div class="depo-stars">★★★★★</div>
+                <p>"A clínica é ok, Mas esse site tá um espetáculo"</p>
+                
+                <div class="depo-autor">
+                    <div class="depo-avatar" style="background: rgba(245,197,24,0.2); color: var(--amarelo);">RM</div>
+                    <div><strong>Lionel Messi</strong><span>Novo paciente</span></div>
+                </div>
+            </div>
+            <div class="depo-card">
+                <div class="depo-stars">★★★★★</div>
+                <p>"Nem fui atendido, mas dei 5 estrelas pelo site"</p>
+                
+                <div class="depo-autor">
+                    <div class="depo-avatar" style="background: rgba(46,123,196,0.2); color: #7AB8E8;">CS</div>
+                    <div><strong>Cristiano Ronaldo</strong><span>Antigo paciente</span></div>
+                </div>
+            </div>
+            <div class="depo-card">
+                <div class="depo-stars">★★★★★</div>
+                <p>"Belíssimo site, merece todo o meu dinheiro"</p>
+                <div class="depo-autor">
+                    <div class="depo-avatar" style="background: rgba(37,211,102,0.15); color: #25D366;">FA</div>
+                    <div><strong>Rodrigo Borges</strong><span>Melhor paciente</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="agendamento" id="contato">
+        <div class="agendamento-content">
+            <div class="section-label">Agendar Consulta</div>
+            <h2 class="section-title">Cuide da sua saúde hoje mesmo</h2>
+            <p class="section-sub">Agende sua consulta de forma rápida e prática. Nossa equipe está pronta para atendê-lo com todo o cuidado que você merece.</p>
+            <div class="agendamento-options">
+                <a href="https://wa.me/5521983259795" target="_blank" class="btn-whatsapp-lg">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.112 1.532 5.836L.067 23.077a.5.5 0 00.608.66l5.456-1.437A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.659-.522-5.17-1.427l-.374-.222-3.832 1.009 1.039-3.727-.244-.387A9.957 9.957 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+                    </svg>
+                    Agendar pelo WhatsApp
+                </a>
+                <a href="tel:+5521983259795" class="btn-tel">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.08 10a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2.02z"/>
+                    </svg>
+                    (21) 98325-9795
+                </a>
+            </div>
+
+            <div class="agendamento-info">
+                <div class="info-item"><div class="dot"></div>Seg–Sex: 8h às 18h</div>
+                <div class="info-item"><div class="dot"></div>Sáb: 8h às 13h</div>
+                <div class="info-item"><div class="dot"></div>Rua Aura, 67 – Centro </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <strong>Clínica Excelência</strong>
+                <p>Mais de 15 anos cuidando da saúde e bem-estar das famílias com dedicação, tecnologia e humanização.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-btn" title="Instagram">📷</a>
+                    <a href="#" class="social-btn" title="Facebook">📘</a>
+                    <a href="https://wa.me/5521983259795" class="social-btn" title="WhatsApp" target="_blank">💬</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Especialidades</h4>
+                <ul>
+                <li><a href="#">Cardiologia</a></li>
+                <li><a href="#">Neurologia</a></li>
+                <li><a href="#">Ortopedia</a></li>
+                <li><a href="#">Pediatria</a></li>
+                <li><a href="#">Dermatologia</a></li>
+                </ul>
+                </div>
+            <div class="footer-col">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#sobre">Sobre a Clínica</a></li>
+                    <li><a href="#medicos">Nossa Equipe</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#">Convênios</a></li>
+                    <li><a href="#">Blog de Saúde</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <ul>
+                    <li><a href="tel:+5521983259795">(21) 98325-9795</a></li>
+                    <li><a href="mailto:araujoarthur2439@gmail.com">araujoarthur2439@gmail.com</a></li>
+                    <li><a href="#">Rua Aura, 67</a></li>
+                    <li><a href="#">Centro – Jabatiúma - PE</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 Clínica Orthon+ Todos os direitos reservados.</span>
+            <div><span>Desenvolvido com garra por <a style="text-decoration:none; color:#F5C518;" href="https://github.com/Araujo-Arthur">Arthur Araújo</a></span></div>
+        </div>
+    </footer>
+    <a href="https://wa.me/5521983259795" class="float-wa" target="_blank" title="Falar no WhatsApp">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="white">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.112 1.532 5.836L.067 23.077a.5.5 0 00.608.66l5.456-1.437A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.659-.522-5.17-1.427l-.374-.222-3.832 1.009 1.039-3.727-.244-.387A9.957 9.957 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
