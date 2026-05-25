@@ -1,11 +1,5 @@
-/* =====================================================
-   clinica-medica.js
-   Funcionalidades interativas do site da clínica
-   ===================================================== */
-
 document.addEventListener('DOMContentLoaded', function () {
 
-  /* ─── 1. NAVBAR: sombra ao rolar ─── */
   const nav = document.querySelector('nav');
   window.addEventListener('scroll', function () {
     if (window.scrollY > 20) {
@@ -15,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  /* ─── 2. MENU MOBILE (hambúrguer) ─── */
   const toggle = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.nav-links');
 
@@ -26,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
       toggle.setAttribute('aria-expanded', isOpen);
     });
 
-    // Fecha o menu ao clicar em um link
     navLinks.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', function () {
         navLinks.classList.remove('open');
@@ -34,20 +26,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* ─── 3. SCROLL SUAVE para links âncora ─── */
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
       const target = document.querySelector(this.getAttribute('href'));
       if (target) {
         e.preventDefault();
-        const offset = 80; // altura da navbar fixa
+        const offset = 80;
         const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
         window.scrollTo({ top: top, behavior: 'smooth' });
       }
     });
   });
 
-  /* ─── 4. ANIMAÇÃO DE ENTRADA (Intersection Observer) ─── */
   const animTargets = document.querySelectorAll(
     '.espec-card, .medico-card, .depo-card, .sobre-grid, .hero-content'
   );
@@ -66,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function () {
     observer.observe(el);
   });
 
-  /* ─── 5. CONTADOR ANIMADO nas estatísticas do Hero ─── */
   const stats = [
     { el: document.querySelector('.stat:nth-child(1) strong'), target: 15, suffix: '+ anos' },
     { el: document.querySelector('.stat:nth-child(2) strong'), target: 8000, suffix: '+', prefix: '+' },
@@ -103,7 +92,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Dispara quando o hero fica visível (já está visível no load)
   const heroSection = document.querySelector('.hero');
   if (heroSection) {
     const heroObserver = new IntersectionObserver(function (entries) {
@@ -112,16 +100,13 @@ document.addEventListener('DOMContentLoaded', function () {
     heroObserver.observe(heroSection);
   }
 
-  /* ─── 6. TOOLTIP no botão flutuante do WhatsApp ─── */
   const floatWa = document.querySelector('.float-wa');
   if (floatWa) {
     floatWa.setAttribute('title', 'Agendar consulta pelo WhatsApp');
   }
 
-  /* ─── 7. LINK WHATSAPP DINÂMICO ─── */
-  // Facilita trocar o número em um único lugar
-  const WHATSAPP_NUMBER = '5521999999999';
-  const WHATSAPP_MESSAGE = encodeURIComponent('Olá! Gostaria de agendar uma consulta na Clínica Excelência.');
+  const WHATSAPP_NUMBER = '5521983259795';
+  const WHATSAPP_MESSAGE = encodeURIComponent('Olá! Gostaria de agendar uma consulta na Clínica Orthon+.');
 
   document.querySelectorAll('a[href*="wa.me"]').forEach(function (link) {
     link.href = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + WHATSAPP_MESSAGE;
@@ -129,7 +114,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-/* ─── CSS de animações inserido via JS ─── */
 (function injectAnimationCSS() {
   const style = document.createElement('style');
   style.textContent = `
@@ -148,7 +132,6 @@ document.addEventListener('DOMContentLoaded', function () {
   `;
   document.head.appendChild(style);
 
-  // Atribui índice para stagger
   document.querySelectorAll('.espec-card').forEach(function (el, i) { el.style.setProperty('--i', i); });
   document.querySelectorAll('.medico-card').forEach(function (el, i) { el.style.setProperty('--i', i); });
   document.querySelectorAll('.depo-card').forEach(function (el, i) { el.style.setProperty('--i', i); });
